@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour {
 	public float sprintSpeed = 0.15f;
 	public float strafeSpeed = 0.075f;
 	public float backUpSpeed = -0.05f;
-	private float yaw = 0.0f;
+	private float xRotate = 0.0f;
 	public float rotationSpeed = 10.0f;
 	// Use this for initialization
 	void Start () {
@@ -37,8 +37,9 @@ public class Movement : MonoBehaviour {
 			grounded = false;
 		}
 		{
-			yaw += speedH * Input.GetAxis("Mouse X");
-			transform.eulerAngles = new Vector3(0.0f, yaw, 0.0f);
+			//mouselook
+			xRotate += speedH * Input.GetAxis("Mouse X");
+			transform.eulerAngles = new Vector3(0.0f, xRotate, 0.0f);
 
 			if (Input.GetKeyDown ("escape"))
 				Cursor.lockState = CursorLockMode.None;
