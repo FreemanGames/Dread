@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Dice : MonoBehaviour {
+	
 	public int count;
 	public int sides;
 
@@ -23,7 +24,7 @@ public class Dice : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			Debug.Log (RollAll ());
+			Debug.Log (RollOne ());
 		}
 	}
 
