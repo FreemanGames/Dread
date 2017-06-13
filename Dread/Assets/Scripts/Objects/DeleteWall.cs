@@ -5,6 +5,7 @@ using UnityEngine;
 public class DeleteWall : MonoBehaviour {
 
 	void Start () {
+		//destroys the gameobject after 4 seconds
 		Destroy (this.gameObject, 4F);
 	}
 }

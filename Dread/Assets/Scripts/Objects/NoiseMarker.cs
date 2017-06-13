@@ -6,6 +6,7 @@ public class NoiseMarker : MonoBehaviour {
 
 	// will create gameoject before destroying it after 4 seconds
 	void Start () {
+		//Destroys this object after four seconds
 		Destroy (this.gameObject, 4F);
 	}
 	
